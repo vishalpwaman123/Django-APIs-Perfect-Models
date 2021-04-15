@@ -12,9 +12,9 @@ class User(models.Model):
         max_length=200, unique=True, blank=False, null=False)
     password = models.CharField(
         max_length=200, blank=False, null=False)
+    is_verified = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.email
-
+        return self.first_name

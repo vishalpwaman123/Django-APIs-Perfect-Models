@@ -6,3 +6,9 @@
 "email":"",
 "password":""
 }
+
+# Send Email
+
+{
+"email":"vishalpwaman123@gmail.com"
+}
